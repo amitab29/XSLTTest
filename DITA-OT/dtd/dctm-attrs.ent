@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ENTITY % dctm-attrs "xmlns:dctm CDATA #IMPLIED
+     dctm:obj_id                CDATA    #IMPLIED
+     dctm:obj_status            CDATA    #IMPLIED
+     dctm:version_label         CDATA    #IMPLIED
+     dctm:link_version_label    CDATA    #IMPLIED" >    

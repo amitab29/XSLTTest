@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<license issuer="RenderX" issued="2007-05-02">
+   <licensee>
+      <person>For redistribution with Documentum XML Transformation Services only</person>
+      <organization>EMC Corporation</organization>
+   </licensee>
+   <product name="XEP">
+      <limit name="server">1</limit>
+   </product>
+<signature>iQBVAgUARjjwgvz8zkdesEfDAQHs9QH+LIA+nqeWr2r9cLTwA1hj4fDH2cIplYm2
+287HjqQWZTnsArFci8CIrGCyeB0cznd5DBjXAxW/CWUegsozKKcIFA===f1K6</signature></license>

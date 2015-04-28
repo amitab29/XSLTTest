@@ -1,0 +1,627 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{766ac8fa-3cb1-4251-9d24-916a39bd1456}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>myfirstexample.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="package.json" />
+    <Content Include="readme.txt" />
+    <Content Include="s_test.xml" />
+    <Content Include="test.xml" />
+    <Compile Include="myfirstexample.js" />
+    <Compile Include="myfirstexample1.js" />
+    <Content Include="DITA-OT\catalog-dita.txt" />
+    <Content Include="DITA-OT\files.txt" />
+    <Content Include="DITA-OT\license.txt" />
+    <Content Include="DITA-OT\relnotes.txt" />
+    <Content Include="DITA-OT\APACHE-LICENSE-2_0.html" />
+    <Content Include="DITA-OT\CommonPublicLicense-v10.html" />
+    <Content Include="DITA-OT\EvaluateOT.html" />
+    <Content Include="DITA-OT\build.xml" />
+    <Content Include="DITA-OT\build_demo.xml" />
+    <Content Include="DITA-OT\build_dita2docbook.xml" />
+    <Content Include="DITA-OT\build_dita2eclipsecontent.xml" />
+    <Content Include="DITA-OT\build_dita2eclipsehelp.xml" />
+    <Content Include="DITA-OT\build_dita2htmlhelp.xml" />
+    <Content Include="DITA-OT\build_dita2javahelp.xml" />
+    <Content Include="DITA-OT\build_dita2pdf.xml" />
+    <Content Include="DITA-OT\build_dita2tlxhtml.xml" />
+    <Content Include="DITA-OT\build_dita2troff.xml" />
+    <Content Include="DITA-OT\build_dita2wordrtf.xml" />
+    <Content Include="DITA-OT\build_dita2xhtml.xml" />
+    <Content Include="DITA-OT\build_general.xml" />
+    <Content Include="DITA-OT\build_general_template.xml" />
+    <Content Include="DITA-OT\build_init.xml" />
+    <Content Include="DITA-OT\build_preprocess.xml" />
+    <Content Include="DITA-OT\build_template.xml" />
+    <Content Include="DITA-OT\build_tl_general.xml" />
+    <Content Include="DITA-OT\catalog-ant.xml" />
+    <Content Include="DITA-OT\catalog-dita.xml" />
+    <Content Include="DITA-OT\catalog-dita_template.xml" />
+    <Content Include="DITA-OT\conductor.xml" />
+    <Content Include="DITA-OT\ditatargets.xml" />
+    <Content Include="DITA-OT\integrator.xml" />
+    <Content Include="DITA-OT\pretargets.xml" />
+    <Content Include="DITA-OT\ant\sample_all.xml" />
+    <Content Include="DITA-OT\ant\sample_docbook.xml" />
+    <Content Include="DITA-OT\ant\sample_eclipsehelp.xml" />
+    <Content Include="DITA-OT\ant\sample_htmlhelp.xml" />
+    <Content Include="DITA-OT\ant\sample_javahelp.xml" />
+    <Content Include="DITA-OT\ant\sample_pdf.xml" />
+    <Content Include="DITA-OT\ant\sample_wordrtf.xml" />
+    <Content Include="DITA-OT\ant\sample_xhtml.xml" />
+    <Content Include="DITA-OT\ant\template_docbook.xml" />
+    <Content Include="DITA-OT\ant\template_eclipsehelp.xml" />
+    <Content Include="DITA-OT\ant\template_htmlhelp.xml" />
+    <Content Include="DITA-OT\ant\template_javahelp.xml" />
+    <Content Include="DITA-OT\ant\template_pdf.xml" />
+    <Content Include="DITA-OT\ant\template_wordrtf.xml" />
+    <Content Include="DITA-OT\ant\template_xhtml.xml" />
+    <Content Include="DITA-OT\css\concept.css" />
+    <Content Include="DITA-OT\css\dita_classed_shell.css" />
+    <Content Include="DITA-OT\css\dita_shell.css" />
+    <Content Include="DITA-OT\css\domains.css" />
+    <Content Include="DITA-OT\css\domains_classed.css" />
+    <Content Include="DITA-OT\css\domains_unclassed.css" />
+    <Content Include="DITA-OT\css\map_shell.css" />
+    <Content Include="DITA-OT\css\reference.css" />
+    <Content Include="DITA-OT\css\task.css" />
+    <Content Include="DITA-OT\css\topic-alt.css" />
+    <Content Include="DITA-OT\css\topic.css" />
+    <Content Include="DITA-OT\css\topic_classed.css" />
+    <Content Include="DITA-OT\doc\ascript.html" />
+    <Content Include="DITA-OT\doc\DITA-ant.html" />
+    <Content Include="DITA-OT\doc\DITA-antscript.html" />
+    <Content Include="DITA-OT\doc\DITA-antuse.html" />
+    <Content Include="DITA-OT\doc\DITA-changes.html" />
+    <Content Include="DITA-OT\doc\DITA-futures.html" />
+    <Content Include="DITA-OT\doc\DITA-h2d-ant.html" />
+    <Content Include="DITA-OT\doc\DITA-h2d-java.html" />
+    <Content Include="DITA-OT\doc\DITA-h2d.html" />
+    <Content Include="DITA-OT\doc\DITA-installation.html" />
+    <Content Include="DITA-OT\doc\DITA-javacmd.html" />
+    <Content Include="DITA-OT\doc\DITA-limitations.html" />
+    <Content Include="DITA-OT\doc\DITA-log.html" />
+    <Content Include="DITA-OT\doc\DITA-readme.html" />
+    <Content Include="DITA-OT\doc\DITA-relnotes.html" />
+    <Content Include="DITA-OT\doc\DITA-setupant.html" />
+    <Content Include="DITA-OT\doc\DITA-tested.html" />
+    <Content Include="DITA-OT\doc\DITA-troubleshooting.html" />
+    <Content Include="DITA-OT\doc\DITA-usingtransforms.html" />
+    <Content Include="DITA-OT\doc\DITA1.1-newfeature.html" />
+    <Content Include="DITA-OT\doc\dita2word.html" />
+    <Content Include="DITA-OT\doc\eclipseconprov.html" />
+    <Content Include="DITA-OT\doc\index.html" />
+    <Content Include="DITA-OT\doc\jcomm.html" />
+    <Content Include="DITA-OT\doc\mapref.html" />
+    <Content Include="DITA-OT\doc\xmlcatalog.html" />
+    <Content Include="DITA-OT\doc\commonltr.css" />
+    <Content Include="DITA-OT\doc\commonrtl.css" />
+    <Content Include="DITA-OT\doc\preprocess.gif" />
+    <Content Include="DITA-OT\doc\ascript.xml" />
+    <Content Include="DITA-OT\doc\DITA-ant.xml" />
+    <Content Include="DITA-OT\doc\DITA-antscript.xml" />
+    <Content Include="DITA-OT\doc\DITA-antuse.xml" />
+    <Content Include="DITA-OT\doc\DITA-changes.xml" />
+    <Content Include="DITA-OT\doc\DITA-futures.xml" />
+    <Content Include="DITA-OT\doc\DITA-h2d-ant.xml" />
+    <Content Include="DITA-OT\doc\DITA-h2d-java.xml" />
+    <Content Include="DITA-OT\doc\DITA-h2d.xml" />
+    <Content Include="DITA-OT\doc\DITA-installation.xml" />
+    <Content Include="DITA-OT\doc\DITA-javacmd.xml" />
+    <Content Include="DITA-OT\doc\DITA-limitations.xml" />
+    <Content Include="DITA-OT\doc\DITA-log.xml" />
+    <Content Include="DITA-OT\doc\DITA-preprocessarch.xml" />
+    <Content Include="DITA-OT\doc\DITA-readme.xml" />
+    <Content Include="DITA-OT\doc\DITA-relnotes.xml" />
+    <Content Include="DITA-OT\doc\DITA-setupant.xml" />
+    <Content Include="DITA-OT\doc\DITA-tested.xml" />
+    <Content Include="DITA-OT\doc\DITA-testing.xml" />
+    <Content Include="DITA-OT\doc\DITA-troubleshooting.xml" />
+    <Content Include="DITA-OT\doc\DITA-usingtransforms.xml" />
+    <Content Include="DITA-OT\doc\DITA-XS-readme.xml" />
+    <Content Include="DITA-OT\doc\DITA1.1-newfeature.xml" />
+    <Content Include="DITA-OT\doc\dita2word.xml" />
+    <Content Include="DITA-OT\doc\eclipseconprov.xml" />
+    <Content Include="DITA-OT\doc\EvaluateOT.xml" />
+    <Content Include="DITA-OT\doc\jcomm.xml" />
+    <Content Include="DITA-OT\doc\mapref.xml" />
+    <Content Include="DITA-OT\doc\prerequsitietoolsetup.xml" />
+    <Content Include="DITA-OT\doc\xmlcatalog.xml" />
+    <Content Include="DITA-OT\lib\APACHE-LICENSE-2_0.html" />
+    <Content Include="DITA-OT\plugins\empty.txt" />
+    <Content Include="DITA-OT\resource\index.html" />
+    <Content Include="DITA-OT\resource\commonltr.css" />
+    <Content Include="DITA-OT\resource\commonrtl.css" />
+    <Content Include="DITA-OT\resource\dtl-base.css" />
+    <Content Include="DITA-OT\resource\dtl-table.css" />
+    <Content Include="DITA-OT\resource\dtl-topic.css" />
+    <Content Include="DITA-OT\resource\delta.gif" />
+    <Content Include="DITA-OT\resource\deltaend.gif" />
+    <Content Include="DITA-OT\resource\messages.xml" />
+    <Content Include="DITA-OT\resource\plugin.xml" />
+    <Content Include="DITA-OT\schema\catalog.xml" />
+    <Content Include="DITA-OT\demo\book\bookmap-readme.html" />
+    <Content Include="DITA-OT\demo\book\bookmap-readme.xml" />
+    <Content Include="DITA-OT\demo\book\closeprograms.xml" />
+    <Content Include="DITA-OT\demo\book\configuredatabase.xml" />
+    <Content Include="DITA-OT\demo\book\configurestorage.xml" />
+    <Content Include="DITA-OT\demo\book\configurewebserver.xml" />
+    <Content Include="DITA-OT\demo\book\configuring.xml" />
+    <Content Include="DITA-OT\demo\book\databasetrouble.xml" />
+    <Content Include="DITA-OT\demo\book\drivetrouble.xml" />
+    <Content Include="DITA-OT\demo\book\insertdrive.xml" />
+    <Content Include="DITA-OT\demo\book\installdb.xml" />
+    <Content Include="DITA-OT\demo\book\installing.xml" />
+    <Content Include="DITA-OT\demo\book\installstorage.xml" />
+    <Content Include="DITA-OT\demo\book\installwebserver.xml" />
+    <Content Include="DITA-OT\demo\book\maintaindatabase.xml" />
+    <Content Include="DITA-OT\demo\book\maintaining.xml" />
+    <Content Include="DITA-OT\demo\book\maintainserver.xml" />
+    <Content Include="DITA-OT\demo\book\maintainstorage.xml" />
+    <Content Include="DITA-OT\demo\book\replacecover.xml" />
+    <Content Include="DITA-OT\demo\book\restart.xml" />
+    <Content Include="DITA-OT\demo\book\runsetup.xml" />
+    <Content Include="DITA-OT\demo\book\task_appendix.xml" />
+    <Content Include="DITA-OT\demo\book\task_bkinfo.xml" />
+    <Content Include="DITA-OT\demo\book\task_preface.xml" />
+    <Content Include="DITA-OT\demo\book\troubleshooting.xml" />
+    <Content Include="DITA-OT\demo\book\unscrewcover.xml" />
+    <Content Include="DITA-OT\demo\book\webtrouble.xml" />
+    <Content Include="DITA-OT\demo\elementref\README_ELEMENTREF.txt" />
+    <Content Include="DITA-OT\demo\elementref\map-elements.html" />
+    <Content Include="DITA-OT\demo\elementref\map.html" />
+    <Content Include="DITA-OT\demo\elementref\topicref.html" />
+    <Content Include="DITA-OT\demo\elementref\elementref.css" />
+    <Content Include="DITA-OT\demo\elementref\elementref_shell.css" />
+    <Content Include="DITA-OT\demo\elementref\commonLRdefs.xml" />
+    <Content Include="DITA-OT\demo\elementref\elementref_strings.xml" />
+    <Content Include="DITA-OT\demo\elementref\map.xml" />
+    <Content Include="DITA-OT\demo\elementref\topicref.xml" />
+    <Content Include="DITA-OT\demo\enote\enote_strings.xml" />
+    <Content Include="DITA-OT\demo\enote\testnote2.xml" />
+    <Content Include="DITA-OT\demo\faq\README_FAQ.txt" />
+    <Content Include="DITA-OT\demo\faq\DITA-faq.html" />
+    <Content Include="DITA-OT\demo\faq\ditafaq.html" />
+    <Content Include="DITA-OT\demo\faq\faq.css" />
+    <Content Include="DITA-OT\demo\faq\faq_shell.css" />
+    <Content Include="DITA-OT\demo\faq\DITA-faq.xml" />
+    <Content Include="DITA-OT\demo\faq\ditafaq.xml" />
+    <Content Include="DITA-OT\demo\faq\faq_strings.xml" />
+    <Content Include="DITA-OT\demo\fo\README.txt" />
+    <Content Include="DITA-OT\demo\fo\build.xml" />
+    <Content Include="DITA-OT\demo\fo\buildPackage.xml" />
+    <Content Include="DITA-OT\demo\fo\integrator.xml" />
+    <Content Include="DITA-OT\demo\fo\plugin.xml" />
+    <Content Include="DITA-OT\demo\h2d\build.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\catalog.xml" />
+    <Content Include="DITA-OT\demo\fo\Customization\README.txt" />
+    <Content Include="DITA-OT\demo\fo\cfg\fo\font-mappings.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\fo\layout-masters.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\common\artwork\hand.gif" />
+    <Content Include="DITA-OT\demo\fo\cfg\common\artwork\warning.gif" />
+    <Content Include="DITA-OT\demo\fo\cfg\common\index\de_DE.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\common\index\en_US.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\common\index\es_ES.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\common\index\fr_FR.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\common\index\it_IT.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\common\index\ja_JP.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\common\index\zh_CN.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\common\vars\de_DE.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\common\vars\en_US.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\common\vars\es_ES.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\common\vars\fr_FR.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\common\vars\it_IT.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\common\vars\ja_JP.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\common\vars\zh_CN.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\fo\i18n\de_DE.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\fo\i18n\en_US.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\fo\i18n\es_ES.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\fo\i18n\fr_FR.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\fo\i18n\it_IT.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\fo\i18n\ja_JP.xml" />
+    <Content Include="DITA-OT\demo\fo\cfg\fo\i18n\zh_CN.xml" />
+    <Content Include="DITA-OT\demo\fo\Customization\common\artwork\README.txt" />
+    <Content Include="DITA-OT\demo\fo\Customization\common\index\README.txt" />
+    <Content Include="DITA-OT\demo\fo\Customization\common\vars\README.txt" />
+    <Content Include="DITA-OT\demo\fo\Customization\fo\attrs\README.txt" />
+    <Content Include="DITA-OT\demo\fo\Customization\fo\i18n\README.txt" />
+    <Content Include="DITA-OT\demo\fo\Customization\fo\xsl\README.txt" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\readme.txt" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\license.xml" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\xep.xml" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\doc\WhatsNew.txt" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\doc\tutorial.html" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\doc\XEPUserGuide.html" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\images\stamp-renderx.png" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\images\404.gif" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\images\colorbar.svg" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\images\logo-renderx.svg" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\images\registration.svg" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\doc\PNGgraphics\BackendsAFPConfig.png" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\doc\PNGgraphics\BackendsPDFConfig.png" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\doc\PNGgraphics\BackendsPSConfig.png" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\doc\PNGgraphics\BackendsSVGConfig.png" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\doc\PNGgraphics\FontsConfig.png" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\doc\PNGgraphics\Formatting.png" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\doc\PNGgraphics\LanguagesConfig.png" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\doc\PNGgraphics\MainConfig.png" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\doc\PNGgraphics\OpenFile.png" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\doc\PNGgraphics\Parameters.png" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\doc\PNGgraphics\renderx1.png" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\doc\PNGgraphics\renderx2.png" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\doc\PNGgraphics\SelectFont.png" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\examples\hammer\hammer.xml" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\examples\pdfforms\readme.txt" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\examples\pdfforms\logo-renderx.svg" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\examples\pdfforms\pdfforms.xml" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\examples\xmlspec\readme.txt" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\examples\xmlspec\w3c.gif" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\examples\xmlspec\xml2e.xml" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\examples\xmlspec\xpath.xml" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\examples\xmlspec\xslt.xml" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\examples\basic\Images\spots.jpg" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\examples\hammer\Images\box.jpg" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\examples\hammer\Images\brick.jpg" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\examples\hammer\Images\can.jpg" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\examples\hammer\Images\hammer.jpg" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\examples\hammer\Images\nail.jpg" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\examples\hammer\Images\plank.jpg" />
+    <Content Include="DITA-OT\demo\fo\lib\xep\examples\hammer\Images\screw.jpg" />
+    <Content Include="DITA-OT\demo\h2d\samples\concept.html" />
+    <Content Include="DITA-OT\demo\h2d\samples\content.html" />
+    <Content Include="DITA-OT\demo\h2d\samples\reference.html" />
+    <Content Include="DITA-OT\demo\h2d\samples\task.html" />
+    <Content Include="DITA-OT\demo\h2d\samples\topic.html" />
+    <Content Include="DITA-OT\doc\articles\DITA-domains.html" />
+    <Content Include="DITA-OT\doc\articles\DITA-dsf.html" />
+    <Content Include="DITA-OT\doc\articles\DITA-mapdomains.html" />
+    <Content Include="DITA-OT\doc\articles\DITA-rm.html" />
+    <Content Include="DITA-OT\doc\articles\index.html" />
+    <Content Include="DITA-OT\doc\articles\commonltr.css" />
+    <Content Include="DITA-OT\doc\articles\commonrtl.css" />
+    <Content Include="DITA-OT\doc\articles\DITA-domains.xml" />
+    <Content Include="DITA-OT\doc\articles\DITA-dsf.xml" />
+    <Content Include="DITA-OT\doc\articles\DITA-mapdomains.xml" />
+    <Content Include="DITA-OT\doc\articles\DITA-rm.xml" />
+    <Content Include="DITA-OT\doc\dev_ref\standardxmlcatalogresolver.html" />
+    <Content Include="DITA-OT\doc\dev_ref\supporting_file_extension.html" />
+    <Content Include="DITA-OT\doc\dev_ref\topicmerge.html" />
+    <Content Include="DITA-OT\doc\dev_ref\workingwithdocplugin.html" />
+    <Content Include="DITA-OT\doc\dev_ref\buildconfig.jpg" />
+    <Content Include="DITA-OT\doc\dev_ref\buildout.JPG" />
+    <Content Include="DITA-OT\doc\dev_ref\Cditaot.jpg" />
+    <Content Include="DITA-OT\doc\dev_ref\classpath.jpg" />
+    <Content Include="DITA-OT\doc\dev_ref\createlpluginproject.jpg" />
+    <Content Include="DITA-OT\doc\dev_ref\dependicies.jpg" />
+    <Content Include="DITA-OT\doc\dev_ref\export.jpg" />
+    <Content Include="DITA-OT\doc\dev_ref\filesys.jpg" />
+    <Content Include="DITA-OT\doc\dev_ref\newdirectory.JPG" />
+    <Content Include="DITA-OT\doc\dev_ref\org.jpg" />
+    <Content Include="DITA-OT\doc\dev_ref\outofmemory.jpg" />
+    <Content Include="DITA-OT\doc\dev_ref\overview.jpg" />
+    <Content Include="DITA-OT\doc\dev_ref\runasant.jpg" />
+    <Content Include="DITA-OT\doc\dev_ref\selectplugin.jpg" />
+    <Content Include="DITA-OT\doc\dev_ref\setdirectory.jpg" />
+    <Content Include="DITA-OT\doc\dev_ref\specifyoutputdir.JPG" />
+    <Content Include="DITA-OT\doc\dev_ref\toc.jpg" />
+    <Content Include="DITA-OT\doc\installguide\colophon.html" />
+    <Content Include="DITA-OT\doc\installguide\ditaot.html" />
+    <Content Include="DITA-OT\doc\installguide\installingsaxon.html" />
+    <Content Include="DITA-OT\doc\installguide\installingjavahelp.html" />
+    <Content Include="DITA-OT\doc\installguide\installingjdk.html" />
+    <Content Include="DITA-OT\doc\installguide\installingXALAN.html" />
+    <Content Include="DITA-OT\doc\installguide\installotoverview.html" />
+    <Content Include="DITA-OT\doc\installguide\index.html" />
+    <Content Include="DITA-OT\doc\installguide\installingant.html" />
+    <Content Include="DITA-OT\doc\installguide\installingditaot.html" />
+    <Content Include="DITA-OT\doc\installguide\installingfop.html" />
+    <Content Include="DITA-OT\doc\installguide\installinghtmlhelp.html" />
+    <Content Include="DITA-OT\doc\installguide\linux_installotoverview.html" />
+    <Content Include="DITA-OT\doc\installguide\linux_usingditaot.html" />
+    <Content Include="DITA-OT\doc\installguide\linux_installingjavahelp.html" />
+    <Content Include="DITA-OT\doc\installguide\linux_installingsaxon.html" />
+    <Content Include="DITA-OT\doc\installguide\linux_installingXALAN.html" />
+    <Content Include="DITA-OT\doc\installguide\linux_settingenvironmentvariables.html" />
+    <Content Include="DITA-OT\doc\installguide\linux_installingjdk.html" />
+    <Content Include="DITA-OT\doc\installguide\linux_ditaot.html" />
+    <Content Include="DITA-OT\doc\installguide\linux_installingant.html" />
+    <Content Include="DITA-OT\doc\installguide\linux_installingditaot.html" />
+    <Content Include="DITA-OT\doc\installguide\linux_installingfop.html" />
+    <Content Include="DITA-OT\doc\installguide\settingenvironmentvariables.html" />
+    <Content Include="DITA-OT\doc\installguide\title.html" />
+    <Content Include="DITA-OT\doc\installguide\usingditaot.html" />
+    <Content Include="DITA-OT\doc\installguide\commonltr.css" />
+    <Content Include="DITA-OT\doc\installguide\commonrtl.css" />
+    <Content Include="DITA-OT\doc\installguide\colophon.xml" />
+    <Content Include="DITA-OT\doc\installguide\ditaot.xml" />
+    <Content Include="DITA-OT\doc\installguide\installingant.xml" />
+    <Content Include="DITA-OT\doc\installguide\installingditaot.xml" />
+    <Content Include="DITA-OT\doc\installguide\installingfop.xml" />
+    <Content Include="DITA-OT\doc\installguide\installinghtmlhelp.xml" />
+    <Content Include="DITA-OT\doc\installguide\installingjavahelp.xml" />
+    <Content Include="DITA-OT\doc\installguide\installingjdk.xml" />
+    <Content Include="DITA-OT\doc\installguide\installingsaxon.xml" />
+    <Content Include="DITA-OT\doc\installguide\installingXALAN.xml" />
+    <Content Include="DITA-OT\doc\installguide\installotoverview.xml" />
+    <Content Include="DITA-OT\doc\installguide\linux_ditaot.xml" />
+    <Content Include="DITA-OT\doc\installguide\linux_installingant.xml" />
+    <Content Include="DITA-OT\doc\installguide\linux_installingditaot.xml" />
+    <Content Include="DITA-OT\doc\installguide\linux_installingfop.xml" />
+    <Content Include="DITA-OT\doc\installguide\linux_installingjavahelp.xml" />
+    <Content Include="DITA-OT\doc\installguide\linux_installingjdk.xml" />
+    <Content Include="DITA-OT\doc\installguide\linux_installingsaxon.xml" />
+    <Content Include="DITA-OT\doc\installguide\linux_installingXALAN.xml" />
+    <Content Include="DITA-OT\doc\installguide\linux_installotoverview.xml" />
+    <Content Include="DITA-OT\doc\installguide\linux_settingenvironmentvariables.xml" />
+    <Content Include="DITA-OT\doc\installguide\linux_usingditaot.xml" />
+    <Content Include="DITA-OT\doc\installguide\settingenvironmentvariables.xml" />
+    <Content Include="DITA-OT\doc\installguide\title.xml" />
+    <Content Include="DITA-OT\doc\installguide\usingditaot.xml" />
+    <Content Include="DITA-OT\doc\langref\langref-footer.xml" />
+    <Content Include="DITA-OT\doc\articles\image\APIdescdiag.jpg" />
+    <Content Include="DITA-OT\doc\articles\image\basediag.jpg" />
+    <Content Include="DITA-OT\doc\articles\image\content_special.jpg" />
+    <Content Include="DITA-OT\doc\articles\image\manydiag.jpg" />
+    <Content Include="DITA-OT\doc\articles\image\onediag.jpg" />
+    <Content Include="DITA-OT\doc\articles\image\reftopicdiag.jpg" />
+    <Content Include="DITA-OT\doc\articles\image\tip-ing.jpg" />
+    <Content Include="DITA-OT\doc\articles\image\venn1.jpg" />
+    <Content Include="DITA-OT\doc\articles\image\APIdescdiag.gif" />
+    <Content Include="DITA-OT\doc\articles\image\basediag.gif" />
+    <Content Include="DITA-OT\doc\articles\image\c.gif" />
+    <Content Include="DITA-OT\doc\articles\image\content_special.gif" />
+    <Content Include="DITA-OT\doc\articles\image\infoarch1.gif" />
+    <Content Include="DITA-OT\doc\articles\image\infoarch2.gif" />
+    <Content Include="DITA-OT\doc\articles\image\infoarch3.gif" />
+    <Content Include="DITA-OT\doc\articles\image\manydiag.gif" />
+    <Content Include="DITA-OT\doc\articles\image\onediag.gif" />
+    <Content Include="DITA-OT\doc\articles\image\phylogeny5.gif" />
+    <Content Include="DITA-OT\doc\articles\image\reftopicdiag.gif" />
+    <Content Include="DITA-OT\doc\articles\image\snapshot.gif" />
+    <Content Include="DITA-OT\doc\articles\image\topicsamp1.gif" />
+    <Content Include="DITA-OT\doc\articles\image\venn1.gif" />
+    <Content Include="DITA-OT\doc\installguide\pic\compressed.gif" />
+    <Content Include="DITA-OT\doc\installguide\pic\copy.gif" />
+    <Content Include="DITA-OT\doc\langref\langref\images\imagemapworld.jpg" />
+    <Content Include="DITA-OT\doc\userguide\concepts\condproc.xml" />
+    <Content Include="DITA-OT\doc\userguide\images\ngunix.gif" />
+    <Content Include="DITA-OT\doc\userguide\tasks\addmeta.xml" />
+    <Content Include="DITA-OT\doc\userguide\tasks\filtcontent.xml" />
+    <Content Include="DITA-OT\doc\userguide\tasks\flagcontent.xml" />
+    <Content Include="DITA-OT\doc\userguide\tasks\proccond.xml" />
+    <Content Include="DITA-OT\doc\userguide\tasks\showrev.xml" />
+    <Content Include="DITA-OT\samples\concepts\garageconceptsoverview.xml" />
+    <Content Include="DITA-OT\samples\concepts\lawnmower.xml" />
+    <Content Include="DITA-OT\samples\concepts\oil.xml" />
+    <Content Include="DITA-OT\samples\concepts\paint.xml" />
+    <Content Include="DITA-OT\samples\concepts\shelving.xml" />
+    <Content Include="DITA-OT\samples\concepts\snowshovel.xml" />
+    <Content Include="DITA-OT\samples\concepts\toolbox.xml" />
+    <Content Include="DITA-OT\samples\concepts\tools.xml" />
+    <Content Include="DITA-OT\samples\concepts\waterhose.xml" />
+    <Content Include="DITA-OT\samples\concepts\wheelbarrow.xml" />
+    <Content Include="DITA-OT\samples\concepts\workbench.xml" />
+    <Content Include="DITA-OT\samples\concepts\wwfluid.xml" />
+    <Content Include="DITA-OT\samples\image\carwash.jpg" />
+    <Content Include="DITA-OT\samples\image\carwash.gif" />
+    <Content Include="DITA-OT\samples\tasks\changingtheoil.xml" />
+    <Content Include="DITA-OT\samples\tasks\garagetaskoverview.xml" />
+    <Content Include="DITA-OT\samples\tasks\organizing.xml" />
+    <Content Include="DITA-OT\samples\tasks\shovellingsnow.xml" />
+    <Content Include="DITA-OT\samples\tasks\spraypainting.xml" />
+    <Content Include="DITA-OT\samples\tasks\takinggarbage.xml" />
+    <Content Include="DITA-OT\samples\tasks\washingthecar.xml" />
+    <Content Include="DITA-OT\schema\dita132\relnotes_schema.txt" />
+    <Content Include="DITA-OT\tools\ant\welcome.html" />
+    <Content Include="DITA-OT\xsl\common\allstrings.xml" />
+    <Content Include="DITA-OT\xsl\common\allstrings_template.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-ar-eg.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-be-by.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-bg-bg.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-ca-es.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-cs-cz.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-da-dk.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-de-ch.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-de-de.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-el-gr.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-en-ca.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-en-gb.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-en-us.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-es-es.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-et-ee.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-fi-fi.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-fr-be.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-fr-ca.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-fr-ch.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-fr-fr.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-he-il.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-hr-hr.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-hu-hu.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-is-is.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-it-ch.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-it-it.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-ja-jp.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-ko-kr.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-lt-lt.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-lv-lv.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-mk-mk.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-nl-be.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-nl-nl.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-no-no.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-pl-pl.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-pt-br.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-pt-pt.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-ro-ro.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-ru-ru.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-sk-sk.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-sl-si.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-sr-sp.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-sv-se.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-th-th.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-tr-tr.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-uk-ua.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-zh-cn.xml" />
+    <Content Include="DITA-OT\xsl\common\strings-zh-tw.xml" />
+    <Content Include="DITA-OT\xsl\common\strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DITA-OT" />
+    <Folder Include="DITA-OT\ant" />
+    <Folder Include="DITA-OT\css" />
+    <Folder Include="DITA-OT\da_dtd" />
+    <Folder Include="DITA-OT\demo" />
+    <Folder Include="DITA-OT\demo\book" />
+    <Folder Include="DITA-OT\demo\elementref" />
+    <Folder Include="DITA-OT\demo\enote" />
+    <Folder Include="DITA-OT\demo\faq" />
+    <Folder Include="DITA-OT\demo\fo" />
+    <Folder Include="DITA-OT\demo\fo\cfg" />
+    <Folder Include="DITA-OT\demo\fo\cfg\common" />
+    <Folder Include="DITA-OT\demo\fo\cfg\common\artwork" />
+    <Folder Include="DITA-OT\demo\fo\cfg\common\index" />
+    <Folder Include="DITA-OT\demo\fo\cfg\common\properties" />
+    <Folder Include="DITA-OT\demo\fo\cfg\common\vars" />
+    <Folder Include="DITA-OT\demo\fo\cfg\fo" />
+    <Folder Include="DITA-OT\demo\fo\cfg\fo\attrs" />
+    <Folder Include="DITA-OT\demo\fo\cfg\fo\i18n" />
+    <Folder Include="DITA-OT\demo\fo\cfg\fo\xsl" />
+    <Folder Include="DITA-OT\demo\fo\com" />
+    <Folder Include="DITA-OT\demo\fo\com\idiominc" />
+    <Folder Include="DITA-OT\demo\fo\com\idiominc\ws" />
+    <Folder Include="DITA-OT\demo\fo\com\idiominc\ws\opentopic" />
+    <Folder Include="DITA-OT\demo\fo\com\idiominc\ws\opentopic\fo" />
+    <Folder Include="DITA-OT\demo\fo\com\idiominc\ws\opentopic\fo\i18n" />
+    <Folder Include="DITA-OT\demo\fo\com\idiominc\ws\opentopic\fo\index2" />
+    <Folder Include="DITA-OT\demo\fo\com\idiominc\ws\opentopic\fo\index2\configuration" />
+    <Folder Include="DITA-OT\demo\fo\com\idiominc\ws\opentopic\fo\index2\util" />
+    <Folder Include="DITA-OT\demo\fo\com\idiominc\ws\opentopic\fo\xep" />
+    <Folder Include="DITA-OT\demo\fo\com\idiominc\ws\opentopic\xsl" />
+    <Folder Include="DITA-OT\demo\fo\com\idiominc\ws\opentopic\xsl\extension" />
+    <Folder Include="DITA-OT\demo\fo\Customization" />
+    <Folder Include="DITA-OT\demo\fo\Customization\common" />
+    <Folder Include="DITA-OT\demo\fo\Customization\common\artwork" />
+    <Folder Include="DITA-OT\demo\fo\Customization\common\index" />
+    <Folder Include="DITA-OT\demo\fo\Customization\common\vars" />
+    <Folder Include="DITA-OT\demo\fo\Customization\fo" />
+    <Folder Include="DITA-OT\demo\fo\Customization\fo\attrs" />
+    <Folder Include="DITA-OT\demo\fo\Customization\fo\i18n" />
+    <Folder Include="DITA-OT\demo\fo\Customization\fo\xsl" />
+    <Folder Include="DITA-OT\demo\fo\lib" />
+    <Folder Include="DITA-OT\demo\fo\lib\xep" />
+    <Folder Include="DITA-OT\demo\fo\lib\xep\doc" />
+    <Folder Include="DITA-OT\demo\fo\lib\xep\doc\PNGgraphics" />
+    <Folder Include="DITA-OT\demo\fo\lib\xep\examples" />
+    <Folder Include="DITA-OT\demo\fo\lib\xep\examples\basic" />
+    <Folder Include="DITA-OT\demo\fo\lib\xep\examples\basic\Images" />
+    <Folder Include="DITA-OT\demo\fo\lib\xep\examples\charsets" />
+    <Folder Include="DITA-OT\demo\fo\lib\xep\examples\hammer" />
+    <Folder Include="DITA-OT\demo\fo\lib\xep\examples\hammer\Images" />
+    <Folder Include="DITA-OT\demo\fo\lib\xep\examples\pdfforms" />
+    <Folder Include="DITA-OT\demo\fo\lib\xep\examples\xmlspec" />
+    <Folder Include="DITA-OT\demo\fo\lib\xep\fonts" />
+    <Folder Include="DITA-OT\demo\fo\lib\xep\hyphen" />
+    <Folder Include="DITA-OT\demo\fo\lib\xep\images" />
+    <Folder Include="DITA-OT\demo\fo\lib\xep\lib" />
+    <Folder Include="DITA-OT\demo\fo\xsl" />
+    <Folder Include="DITA-OT\demo\fo\xsl\common" />
+    <Folder Include="DITA-OT\demo\fo\xsl\fo" />
+    <Folder Include="DITA-OT\demo\h2d" />
+    <Folder Include="DITA-OT\demo\h2d\samples" />
+    <Folder Include="DITA-OT\demo\java" />
+    <Folder Include="DITA-OT\doc" />
+    <Folder Include="DITA-OT\doc\articles" />
+    <Folder Include="DITA-OT\doc\articles\image" />
+    <Folder Include="DITA-OT\doc\dev_ref" />
+    <Folder Include="DITA-OT\doc\installguide" />
+    <Folder Include="DITA-OT\doc\installguide\pic" />
+    <Folder Include="DITA-OT\doc\langref" />
+    <Folder Include="DITA-OT\doc\langref\common" />
+    <Folder Include="DITA-OT\doc\langref\langref" />
+    <Folder Include="DITA-OT\doc\langref\langref\images" />
+    <Folder Include="DITA-OT\doc\userguide" />
+    <Folder Include="DITA-OT\doc\userguide\concepts" />
+    <Folder Include="DITA-OT\doc\userguide\images" />
+    <Folder Include="DITA-OT\doc\userguide\tasks" />
+    <Folder Include="DITA-OT\dtd" />
+    <Folder Include="DITA-OT\dtd\dita132" />
+    <Folder Include="DITA-OT\lib" />
+    <Folder Include="DITA-OT\out" />
+    <Folder Include="DITA-OT\plugins" />
+    <Folder Include="DITA-OT\resource" />
+    <Folder Include="DITA-OT\samples" />
+    <Folder Include="DITA-OT\samples\concepts" />
+    <Folder Include="DITA-OT\samples\image" />
+    <Folder Include="DITA-OT\samples\taskbook" />
+    <Folder Include="DITA-OT\samples\tasks" />
+    <Folder Include="DITA-OT\schema" />
+    <Folder Include="DITA-OT\schema\dita132" />
+    <Folder Include="DITA-OT\tools" />
+    <Folder Include="DITA-OT\tools\ant" />
+    <Folder Include="DITA-OT\tools\ant\bin" />
+    <Folder Include="DITA-OT\tools\ant\lib" />
+    <Folder Include="DITA-OT\xsl" />
+    <Folder Include="DITA-OT\xsl\common" />
+    <Folder Include="DITA-OT\xsl\docbook" />
+    <Folder Include="DITA-OT\xsl\preprocess" />
+    <Folder Include="DITA-OT\xsl\tlhtml" />
+    <Folder Include="DITA-OT\xsl\troff" />
+    <Folder Include="DITA-OT\xsl\xslfo" />
+    <Folder Include="DITA-OT\xsl\xslhtml" />
+    <Folder Include="DITA-OT\xsl\xslrtf" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

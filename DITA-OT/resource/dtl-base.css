@@ -1,0 +1,408 @@
+.topic,.background, .section, .transformedContent
+{
+    display: block;
+    margin: 1em 0em 1em 1em;
+    font-size: 11px;
+    font-family: Arial, Sans-Serif;
+}
+
+/*  paragraph-level elements    */
+p, .paragraph
+{
+    display: block;
+    margin: 1em 0em 1em 1em;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+/*Ruth, Email dated 6/30/09 11.43AM, the bullet items should be the same size as parents*/
+.ul, .ol, .document_ol_outputclass_static
+{
+    display: inline-block;
+    font-size: 13.2px;
+    margin-left: 2.5em;
+    padding-left: 0.75em;
+}
+
+.li_p, .li_p_adjacent_p
+{
+    display: block;
+    margin: 0em 0em 1em 0em;
+    font-family: Arial, sans-serif;
+    font-size: 13.2px; /*Remediation Issues- Overall #6. List items to have same size as parents*/
+}
+
+/* lists */
+.ul_outputclass_simple
+{
+    color: inherit;
+    background-color: inherit;
+    list-style-type: none;
+}
+
+.ul_li
+{
+    margin-top: 1em;
+    display: list-item;
+    margin-left: 2.5em;
+    font-size: 13.2px;
+    list-style-type: disc;
+}
+
+.ul_li_ul_li
+{
+    margin-top: 1em;
+    display: list-item;
+    margin-left: 1em;
+    font-size: inherit;
+    list-style-type: disc;
+}
+
+.ol_decimal_li
+{
+    margin-top: 1em;
+    display: list-item;
+    margin-left: 1.8em;
+    font-size: inherit;
+    list-style-type: decimal;
+}
+
+.ol_lower-alpha_li
+{
+    margin-top: 1em;
+    display: list-item;
+    margin-left: 1.8em;
+    font-size: inherit;
+    list-style-type: lower-alpha;
+}
+
+.ol_upper-alpha_li
+{
+    margin-top: 1em;
+    display: list-item;
+    margin-left: 1.8em;
+    font-size: inherit;
+    list-style-type: upper-alpha;
+}
+
+.ol_lower-roman_li
+{
+    margin-top: 1em;
+    display: list-item;
+    margin-left: 1.8em;
+    font-size: inherit;
+    list-style-type: lower-roman;
+}
+
+.ol_upper-roman_li
+{
+    margin-top: 1em;
+    display: list-item;
+    margin-left: 1.8em;
+    font-size: inherit;
+    list-style-type: upper-roman;
+}
+
+.ol_outputclass_static_li
+{
+    margin-top: 1em;
+    display: list-item;
+    margin-left: 1.8em;
+    font-size: inherit;
+    list-style-type: none;
+}
+
+.ol_li, .ul_li
+{
+    margin-top: 1em;
+    display: list-item;
+    margin-left: 2.5em;
+    list-style-type: lower-alpha;
+    font-size: 13.2px;
+}
+
+.ul_li
+{
+    margin: .5em 0em .5em 2.5em;
+    list-style-type: disc;
+}
+
+.ol_li_ol_li
+{
+    margin-top: 1em;
+    display: list-item;
+    margin-left: 1.8em;
+    list-style-type: decimal;
+    font-size: inherit;
+}
+
+.sl_sli
+{
+    margin-top: 1em;
+    display: list-item;
+    margin-left: 1.8em;
+    list-style-type: none;
+    font-size: 13.2px;
+}
+
+.note
+{
+    display: block;
+    margin: 1em 0em 1em 1em;
+    font-family: Arial, sans-serif;
+    font-size: inherit;
+}
+
+.example, .guidance-example
+{
+    display: list-item;
+    margin: 1em 0em 1em 6em;
+    list-style-type: none;
+    font-size: 11px;
+    font-family: Arial, Sans-Serif;
+    color: inherit;
+    font-weight: normal;
+    background-color: inherit;
+}
+
+.guidance-example_entry_p
+{
+    font-size: 11px;
+}
+
+.xref, .xref-3rdParty, .xref-external, .footnote_link, .xref-document
+{
+    text-decoration: underline;
+    color: navy;
+    background-color: inherit;
+    font-size: inherit;
+    font-weight: normal; /*Remediation Issues Overall #2- Changed font weight from inherit to normal*/
+}
+
+.xref_no_link
+{
+    background-color: inherit;
+    font-size: inherit;
+    font-weight: normal; /*Remediation Issues GASB #2- Alphabets with no link shud be same font size as links*/
+}
+
+.xref-DTL, .linktext
+{
+    display: inline;
+    text-decoration: underline;
+    color: green;
+    background-color: inherit;
+    font-size: inherit;
+    font-weight: normal; /*Remediation Issues Overall #2- Changed font weight from inherit to normal*/
+}
+
+.otherprops_non-authoritative
+{
+    color: purple;
+    background-color: inherit;
+}
+
+.resolved, .resolved_linkref
+{
+    color: inherit;
+    background-color: #dcdcdc;
+}
+
+.unresolved, .unresolved_linkref
+{
+    color: inherit;
+    background-color: #ffa07a;
+}
+
+.multiple, .multiple_linkref
+{
+    color: inherit;
+    background-color: #9acd32;
+}
+
+.glossterm
+{
+    display: block;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #006699;
+    background-color: inherit;
+}
+
+.document_ol_outputclass_static
+{
+    list-style-type: none;
+}
+
+/*
+    ===========================
+    Highlight domain elements.
+    ===========================
+*/
+.outputclass_policy
+{
+    font-weight: bold;
+    color: inherit;
+    background-color: inherit;
+}
+
+.outputclass_superseded
+{
+    color: inherit;
+    background-color: gray;
+}
+
+.dtl_policy_text, .importance_high
+{
+    font-weight: bold;
+}
+
+.status_new
+{
+    background-color: #C0C0C0;
+    color: inherit;
+}
+
+.status_deleted
+{
+    text-decoration: line-through;
+    background-color: #C0C0C0;
+    color: inherit;
+}
+
+/*== simple table markup ==*/
+
+.simpletable
+{
+    display: table;
+    border: thin solid gray;
+}
+
+.strow, .sthead
+{
+    display: table-row;
+}
+
+.sthead_stentry
+{
+    display: table-cell;
+    font-weight: bold;
+    text-align: center;
+    border: thin solid gray;
+    padding: 2px;
+}
+
+.tstrow_stentry
+{
+    display: table-cell;
+    border: thin solid gray;
+}
+
+.required-cleanup
+{
+    font: inherit;
+    display: inline;
+    color: inherit;
+    background-color: #ffff00;
+}
+
+.related-links, .link
+{
+    display: block;
+    color: #000000;
+    background-color: inherit;
+    margin: 1em 1em 1em 1em;
+}
+
+.related-links-bottom
+{
+    display: none;
+}
+
+.related_links_linklist
+{
+    display: block;
+    color: inherit;
+    background-color: inherit;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    padding: .5em;
+    font-size: 1.2em;
+}
+
+.primary-link, .linklist_title
+{
+    display: block;
+    font-size: inherit;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: inherit;
+}
+
+.primary-link:
+{
+    margin-bottom: 1em;
+}
+
+.secondary-link
+{
+    display: inline;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+}
+
+.sub
+{
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+.sup
+{
+    vertical-align: super;
+    font-size: smaller;
+}
+
+.u
+{
+    text-decoration: underline;
+}
+
+.outputclass_plain
+{
+    font-style: normal;
+    font-weight: normal;
+    font-size: inherit;
+}
+
+/* == image alignment ==*/
+.align_center
+{
+    background-position: center;
+    text-align: center;
+}
+.green_box_border
+{
+	padding: 8px 4px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #3C8A2E;
+}
+.document_green_box_border
+{
+	padding: 8px 4px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #3C8A2E;
+}
+/*change font size of bullets inside guidance example*/
+div[class=guidance-example] ul>li span.ul_li, div[class=guidance-example] ul>li span.li_p
+{
+    display: block;
+    margin: 0em 0em 1em 0em;
+    font-family: Arial, sans-serif;
+    font-size: 11px; 
+}

@@ -1,0 +1,374 @@
+/*Removed most of the table styles, leaving only basic ones*/
+.entry, .entry_no_frame, .entry_no_bottom, .entry_no_top, .entry_no_left_side, .entry_no_right_side, 
+.entry_no_left_side_no_bottom, .entry_no_right_side_no_bottom
+{
+    font-family: Arial, sans-serif;
+    display: table-cell;
+    padding: .25em;
+    vertical-align: top;
+    text-align: left;
+    font-size: 11px;
+    border-color: #777777;
+    border-style: solid;
+    border-width: 2px;
+    border-collapse: collapse;
+}
+
+.entry_no_bottom
+{
+    border-bottom:none;    
+}
+
+.entry_no_top
+{
+    border-top:none;    
+}
+
+.entry_no_left_side
+{
+    border-left:none;
+}
+
+.entry_no_right_side
+{
+    border-right:none;
+}
+
+.entry_no_left_side_no_bottom
+{
+    border-left: none;
+    border-bottom: none;
+}
+
+.entry_no_right_side_no_bottom
+{
+    border-bottom:none;
+    border-right: none;
+}
+
+.entry_p, .entry_p_adjacent_p, .guidance-example_entry_p
+{
+    display: block;
+    margin-left: .1em;
+    vertical-align: top;
+    font-size: 13px;
+}
+
+.guidance-example_entry_p
+{
+	font-size: 11px; 
+}
+
+.document_entry_p
+{
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+.thead_row_entry, .thead_row_entry_no_frame, .thead_row_entry_no_top, .thead_row_entry_no_left_side, .thead_row_entry_no_right_side, 
+.thead_row_entry_no_left_side_no_top, .thead_row_entry_no_right_side_no_top, .thead_row_entry_no_top_no_bottom, .thead_row_entry_no_bottom
+{
+    display: table-header-group;
+    background-color: #dedede; /*color: #000066;*/ /*Remediation Comments SEC #6: Table header should be black content*/
+    font-weight: bold;
+    text-align: center;
+    vertical-align: bottom;
+    padding: 0.5em;
+    border-color: #777777;
+    border-style: solid;
+    border-width: 2px;
+}
+
+.thead_row_entry_no_frame
+{
+    border: none;
+}
+
+.thead_row_entry_no_top
+{
+    border-top: none;
+}
+
+.thead_row_entry_no_bottom
+{
+    border-bottom: none;
+}
+
+.thead_row_entry_no_top_no_bottom
+{
+    border-top: none;
+    border-bottom: none;
+}
+
+.thead_row_entry_no_left_side
+{
+    border-left:none;
+}
+
+.thead_row_entry_no_right_side
+{
+    border-right:none;
+}
+
+.thead_row_entry_no_left_side_no_top
+{
+    border-left: none;
+    border-top: none;
+}
+
+.thead_row_entry_no_right_side_no_top
+{
+    border-right: none;
+    border-top: none;
+}
+
+.table, .table_no_frame, .table_top_frame, .table_bottom_frame, .table_topbot_frame, .table_sides_frame
+{
+    display: table;
+    padding: 2px;
+    margin-top: 1em;
+    padding-top: 1em;
+    border-color: #777777;
+    border-style: solid;
+    border-width: 2px;
+    border-collapse: collapse;
+    font-size: 11px;
+    width: 80%;
+}
+
+.table_no_frame, .entry_no_frame, .thead_row_entry_no_frame
+{
+    border-style: none;
+    border-collapse: collapse;
+}
+
+.table_top_frame
+{
+    border-top:solid 2px #777777;
+}
+
+.table_bottom_frame
+{
+    border-bottom:solid 2px #777777;
+}
+
+.table_topbot_frame
+{
+    border-top:solid 2px #777777;
+    border-bottom:solid 2px #777777;
+    border-left:none;
+    border-right: none;
+}
+
+.table_sides_frame
+{
+    border-left:solid 2px #777777;
+    border-right: solid 2px #777777;
+}
+
+.table_desc
+{
+    display: block;
+}
+.colspec
+{
+    display: block;
+}
+
+.table_title
+{
+    display: table-caption;
+    font-weight: bold;
+    color: #663300;
+    background-color: inherit;
+    text-align: center;
+    margin: 0em 0em 0em .25em;
+}
+
+.border_top
+{
+    border-style: none;
+    border-top-color: #777777;
+    border-top-style: solid;
+    border-top-width: 2px;
+    border-collapse: collapse;
+}
+
+.border_bottom
+{
+    border-style: none;
+    border-bottom-color: #777777;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-collapse: collapse;
+}
+
+.border_rhs
+{
+    border-style: none;
+    border-right-color: #777777;
+    border-right-style: solid;
+    border-right-width: 2px;
+    border-collapse: collapse;
+}
+
+.border_lhs
+{
+    border-style: none;
+    border-left-color: #777777;
+    border-left-style: solid;
+    border-left-width: 2px;
+    border-collapse: collapse;
+}
+
+.border_sides
+{
+    border-style: none;
+    border-left-style: solid;
+    border-left-color: #777777;
+    border-left-width: 2px;
+    border-right-style: solid;
+    border-right-color: #777777;
+    border-right-width: 2px;
+    border-collapse: collapse;
+}
+/*
+.border_top_bottom
+{
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-color: #777777;
+    border-bottom-width: 2px;
+    border-top-style: solid;
+    border-top-color: #777777;
+    border-top-width: 2px;
+    border-collapse: collapse;
+}
+*/
+.border_box
+{
+    border-color: #777777;
+    border-style: solid;
+    border-width: 2px;
+    border-collapse: collapse;
+}
+
+.no_rowsep
+{
+    border-top-style: none;
+    border-bottom-style: none;
+}
+
+.no_colsep
+{
+    border-left-style: none;
+    border-right-style: none;
+}
+
+.align_left
+{
+    text-align: left;
+}
+
+.align_right
+{
+    text-align: right;
+}
+
+.align_center
+{
+    text-align: center;
+}
+
+.tbody
+{
+    display: table-row-group;
+}
+
+.tfoot
+{
+    display: table-footer-group;
+    font-style: oblique;
+    background-color: #DEDEDE;
+    color: navy;
+}
+
+.row, tr
+{
+    display: table-row;
+}
+
+/*
+  entrytbl - A subtable appearing in place of an Entry in a table*/
+
+entrytbl, .entrybl
+{
+    display: table;
+}
+
+th, .th
+{
+    font-weight: bold;
+}
+
+.table_border_rules_cols
+{
+    border-left: 1px solid #777777;
+    border-right: 1px solid #777777;
+    border-collapse: collapse;
+}
+
+.table_border_rules_rows
+{
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    border-collapse: collapse;
+}
+
+.table_border_rules_all
+{
+    border: 1px solid #777777;
+    border-collapse: collapse;
+}
+
+.table_border_rules_none
+{
+    border: 1px solid #EEEEEE;
+    border-collapse: collapse;
+}
+
+.valign_bottom
+{
+    vertical-align: bottom;
+}
+
+.valign_top
+{
+    vertical-align: top;
+}
+
+.valign_middle
+{
+    vertical-align: middle;
+}
+
+.valign_baseline
+{
+    vertical-align: baseline;
+}
+
+colgroup
+{
+    display: block;
+}
+
+.colspec, .col
+{
+    text-align: left;
+    display: block;
+    background-color: inherit;
+    margin: 0.2em;
+    padding: 2px;
+}
+
+

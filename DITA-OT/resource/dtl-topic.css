@@ -1,0 +1,829 @@
+
+
+.printBody
+{
+    font-size: 11px;
+    font-family: Tahoma, verdana,sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    border: none;
+    background-color: #ffffff;
+}
+
+/*
+  Headings, reduce the font size.
+ */
+/* heading level 1 */
+.heading1, .dtl-general_heading1, .qa_heading1, .document_heading1
+{
+    display: block;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background-color: inherit;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.8em;
+    border-bottom: solid thin #000000;
+}
+
+.qa_heading1
+{
+    text-align: left;
+}
+
+.document_heading1
+{
+    margin: 0em 0em 0em 0em;
+    border: none;
+    font-size: inherit;
+    text-decoration: underline;
+}
+
+/* heading level 2 */
+.heading2
+{
+    display: block;
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+    margin-left: .65em;
+}
+
+.dtl-general_heading2, .qa_heading2
+{
+    display: block;
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-style: normal;
+}
+
+/* heading level 3 */
+.heading3
+{
+    display: block;
+    font-size: 1.6em;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    margin: .5em 0em .5em 1.3em;
+}
+
+.dtl-general_heading3, .qa_heading3
+{
+    display: block;
+    font-size: 1.6em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+/* heading level 4 */
+.heading4
+{
+    display: block;
+    font-size: 1.6em;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin: .5em 0em .5em 2.8em;
+}
+
+.dtl-general_heading4, .qa_heading4
+{
+    display: block;
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+/* heading level 5 */
+.heading5
+{
+    display: block;
+    font-size: 1.6em;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    margin: .5em 0em .5em 2.8em;
+}
+
+.dtl-general_heading5, .qa_heading5
+{
+    display: block;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: Arial, sans-serif;
+}
+
+/* heading level 6 */
+.dtl-general_heading6, .qa_heading6
+{
+    display: block;
+    font-size: 1.4em;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-transform: capitalize;
+    margin: .5em 0em .5em 2.8em;
+}
+
+.heading6
+{
+    display: block;
+    font-size: 1.4em;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    margin: .5em 0em .5em 2.8em;
+}
+
+/* heading level 7 */
+.heading7, .dtl-general_heading7, .qa_heading7
+{
+    display: block;
+    font-size: 1.4em;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: underline;
+    margin: .5em 0em .5em 2.8em;
+}
+
+
+/* heading level 8 */
+.heading8, .dtl-general_heading8, .qa_heading8
+{
+    display: block;
+    font-size: 1.4em;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
+    margin: .5em 0em .5em 2.8em;
+}
+
+/*  Section titles */
+.section_title
+{
+    display: block;
+    font-size: 1.8em;
+    font-weight: normal;
+    color: #000000;
+    background-color: inherit;
+    font-family: Arial, sans-serif;
+    margin-left: 0em;
+}
+
+.shortdesc
+{
+    display: block;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background-color: inherit;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1.8em;
+    border-bottom: solid thin #000000;
+}
+
+/* Paragraphs styles */
+.paras, .para, p, .paragraph
+{
+    display: block;
+    margin: 1em 0em 1em 1em;
+}
+
+.term
+{
+    display: inline;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: italic;
+}
+
+.pnum, .pnum-title
+{
+    display: inline;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+.policy-body_pnum
+{
+    display: inline;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.policy-text
+{
+    display: inline;
+    font-weight: bold;
+}
+
+.guidance-text, .guidance-phrase
+{
+    display: inline;
+    font-weight: normal;
+}
+
+.status_changed
+{
+    border-left-color: Black;
+    border-left-style: solid;
+    border-left-width: 3px;
+}
+
+.policy-text_p, .guidance-text_p
+{
+    display: inline;
+    margin: 1em 0em 1em 1em;
+}
+
+.paras_para_p
+{
+    display: block;
+    margin: 1em 0em 1em 0em;
+}
+
+.pnum_adjacent_p
+{
+    display: inline;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+.p_adjacent_p, .fn_p_adjacent_p, .document_p_adjacent_p
+{
+    display: block;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em; /*margin-left: 0em; Email Wednesday, July 15, 2009 11:50 AM, first "p" to have the same margin as the following ones*/
+}
+
+.document_p_adjacent_p
+{
+    margin: 1em 0em 1em 0em;
+}
+
+/*long quotes*/
+.lq
+{
+    display: list-item;
+    margin: 1em 0em 1em 4em;
+    list-style-type: none;
+    font-size: 13px;
+    font-family: Arial, Sans-Serif;
+    color: inherit;
+    background-color: inherit;
+}
+
+.lq_p
+{
+    font-size: 13px;
+    display: block;
+    margin: 1em 0em 1em 1em;
+}
+
+.outputclass_letter-report
+{
+    display: block;
+    margin: 1em 0em 1em 4em;
+    font-weight: bold;
+}
+
+.letter-report_p
+{
+    font-size: 1em;
+    margin: 0em;
+    font-family: Arial, Sans-Serif;
+    color: inherit;
+    background-color: inherit;
+}
+
+.letter-report_adjacent_p
+{
+    font-size: 1em;
+    font-weight: inherit;
+    margin: 0em;
+    font-family: Arial, Sans-Serif;
+    color: inherit;
+    background-color: inherit;
+}
+
+/* Prolog styles */
+.policy-prolog, .guidance-prolog, .dtl-topic-prolog
+{
+    display: none;
+}
+
+.qa-prolog
+{
+    display: block;
+    padding: .25em .25em .25em .25em;
+    text-align: right;
+    font-size: 12px;
+}
+
+.issue-date, .reserved-date, .amended-date, .renumbered-date, .effective-date, .deleted-date, .added-date
+{
+    font-family: Arial, sans-serif;
+    color: #000080;
+    background-color: inherit;
+}
+
+.qa-title
+{
+    display: none;
+}
+
+.qa-id
+{
+    display: inline;
+    font-family: Arial, sans-serif;
+    background-color: inherit;
+}
+
+.qa-source_p
+{
+    display: block;
+    margin: 0em;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    color: #000080;
+    background-color: inherit;
+}
+
+/* body styles */
+.policy, .guidance, .qa
+{
+    display: block;
+    margin: 1em 0em 2.5em 2em;
+}
+
+.note_type_amended, .note_type_added, .note_type_deleted, .note_type_renumbered
+{
+    display: inline;
+    color: red;
+    font-weight: bold;
+    background-color: inherit;
+}
+
+.question, .answer, .exhibit
+{
+    display: block;
+    margin-top: 1em;
+}
+
+.critdates, .created, .revised
+{
+    display: block;
+}
+
+.qa-source
+{
+    display: inline;
+}
+
+.created_after
+{
+    font-family: Arial, sans-serif;
+    background-color: inherit;
+}
+
+.revised_after
+{
+    font-family: Arial, sans-serif;
+    background-color: inherit;
+}
+
+.qa-title_after
+{
+    display: inline;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.qa-id_after
+{
+    display: inline;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+/*Subsection specific*/
+/*  structural elements */
+.subsection
+{
+    display: block;
+    margin: 0.5em;
+    white-space: normal;
+}
+
+.subsectbody
+{
+    display: block;
+    margin-top: 1em;
+}
+
+/*  prolog  */
+.subsect-prolog
+{
+    display: none;
+    border: 1px solid #000080;
+    color: inherit;
+    background-color: #f5f5dc;
+    padding: .25em .25em .25em .25em;
+}
+
+/*
+  paragraphs
+ */
+.p-norm
+{
+    display: block;
+    margin: 1em 0em 1em 1em;
+}
+
+.subsection_pnum
+{
+    display: inline;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.norm-text
+{
+    display: inline;
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+}
+
+.ol_adjacent_sfragment
+{
+    display: block;
+    margin-top: 1em;
+}
+
+.sfragdata
+{
+    display: inline;
+    color: #000080;
+    background-color: inherit;
+}
+
+.att_name_para_sequence
+{
+    display: none;
+}
+
+.glossref
+{
+    display: inline;
+    font-weight: bold;
+    color: #4682b4;
+    background-color: inherit;
+}
+
+.dl, .dd
+{
+    display: inline;
+}
+
+.dlentry
+{
+    display: block;
+}
+
+.dt
+{
+    font-size: 1.2em;
+}
+
+/*.ph - Removed ph style based on CQ 4980. Confirmed with David Prather and Arnold Berkhout
+{
+    margin-left: 1.5em;
+}*/
+
+.document_ph
+{
+    margin-left: 0em;
+}
+
+.dd
+{
+    font-size: 0.8em;
+}
+
+.xref-fn
+{
+    color: #8b0000;
+    background-color: inherit;
+    font-style: normal;
+    font-weight: bold;
+    display: inline;
+    font-size: 1em;
+    vertical-align: super;
+}
+
+.fn
+{
+    color: Black;
+    background-color: inherit;
+    font-style: normal;
+    font-weight: normal;
+    display: inline;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.fn_p
+{
+    display: inline;
+    font-size: 1.2em;
+}
+
+.fn_p_adjacent_p
+{
+    display: block;
+}
+
+.footnote_link
+{
+    display: inline;
+    text-decoration: none;
+}
+
+.table_list
+{
+    margin-left: 0.5em;
+}
+
+.outputclass_indent
+{
+    display: block;
+    margin: 1em 0em 1em 4em;
+    font-weight: inherit;
+}
+
+.dtCopyright, .dtCopyrightnobegin
+{
+    color: Gray;
+    font-size: 1.1em;
+}
+
+.dtCopyright
+{
+    margin-top: 4em;
+}
+
+.dtCopyrightnobegin
+{
+    margin-top: 0em;
+}
+
+.subsection_li_p
+{
+    display: inline;
+    margin: 1em 0em 1em 1em;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+}
+
+.linum_adjacent_p, .sfragment
+{
+    display: inline;
+}
+
+.sfragment_before, .sfragment_after
+{
+    color: #000080;
+    background-color: inherit;
+}
+
+.document_border_table
+{
+    border-color: Black;
+    border-style: solid;
+    border-width: thin;
+    padding: 0pt;
+    font-size: 10pt;
+    font-family: Arial;
+}
+
+.outputclass_nospace
+{
+    margin: 0 0 0 0;
+}
+
+.principle
+{
+    font-weight: bold;
+}
+
+.document_li_p, .document_entry_p
+{
+    font-family: Arial, Sans-Serif;
+    font-size: 13px;
+}
+
+.p_document_ul
+{
+    margin-left: -0.15in;
+}
+
+.document_list
+{
+    padding-left: 0.75in;
+}
+
+.pending-text_before
+{
+    display: block;
+    margin: 0em 0em 0em 0em;
+    color: white;
+    background-color: blue;
+    padding: .25em;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.pending-text
+{
+    display: block;
+    margin: 0em 0em 1em 0em;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    font-size: 13px;
+}
+
+.document_pending-text
+{
+    display: block;
+    margin: 0em 0em 1em 1em;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+    font-size: 13px;
+}
+
+.document_pending-text_before
+{
+    display: block;
+    margin: 0em 0em 0em 0em;
+    color: white;
+    background-color: blue;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.date-effective_before
+{
+    font-weight: bold;
+    font-style: normal;
+}
+
+.date-effective
+{
+    font-weight: normal;
+    font-style: italic;
+}
+
+.date-effective_after
+{
+    font-weight: normal;
+    font-style: normal;
+}
+
+.transition-guidance-ref_before
+{
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    background-color: inherit;
+}
+
+.transition-guidance-ref
+{
+    font-weight: bold;
+    font-style: normal;
+    text-decoration: underline;
+    color: navy;
+    background-color: inherit;
+}
+
+.fig-meta
+{
+    display: none;
+}
+
+.pending_text_dates, .document_pending_text_dates
+{
+    display: block;
+    margin: 0em 0em 0.5em 0em;
+    padding: .25em;
+    background-color: Silver;
+}
+
+/*.document_pending_text_dates
+{
+    margin-left: -0.17in;
+}*/
+.green_header_text
+{
+	font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #3C8A2E;
+    
+}
+
+.green_header_background
+{
+	padding: 2px 0px 2px 2px;
+	border-width: 100%;
+	height: 15px;
+	background-color: #3C8A2E;
+}
+.document_green_header_text
+{
+	font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #3C8A2E;
+    
+}
+
+.inline_ephasis_green_header_text
+{
+	font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background-color: #3C8A2E;
+    
+}
+
+.document_green_header_background
+{
+	padding: 2px 0px 2px 2px;
+	border-width: 100%;
+	height: 15px;
+	background-color: #3C8A2E;
+}
+
+
+
+.elementli
+{
+	
+	padding-bottom: 0px;
+	margin: 1.9em;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	list-style: none none outside;
+	FONT-SIZE: 1.1em;
+	
+}
+.document_elementli
+{
+	
+	padding-bottom: 0px;
+	margin: 1.3em;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	list-style-type:none;
+	FONT-SIZE: 1.1em;
+	
+}
+.elementLabel {
+	FONT-FAMILY: verdana, arial, sans-serif; FONT-SIZE: 1.2em; FONT-WEIGHT: bold
+}
+.xbrlElementCamelCaseName
+{
+	margin: 8px;
+}
+.thissubtopiclist
+{
+	color: black;
+	text-decoration: none;
+	FONT-SIZE: 1.1em;
+	
+	
+}
+.xbrlLink
+{
+	LIST-STYLE-TYPE: square;
+	margin: 10px;
+	
+	
+}
