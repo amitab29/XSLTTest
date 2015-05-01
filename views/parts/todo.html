@@ -1,0 +1,45 @@
+<div ng-controller="todo_list_controller">
+    <div class="jumbotron text-center">
+        <h1>To Do List</h1>
+    </div>
+
+    <table class="table table-striped">
+        <tr>
+            <th>Title</th>
+            <th>Due Date</th>
+            <th></th>
+        </tr>
+        <tr ng-repeat="todo in listOfTodo">
+            <td>
+                {{todo.title}}
+            </td>
+            <td>
+                {{todo.elapse_due_date}}
+            </td>
+            <td>
+                <div class="pull-right action-buttons">
+                    <a href="#"><span class="glyphicon glyphicon-pencil"></span></a>
+                    <a href="#" class="trash" data="{{todo.id}}" ng-click="delete(todo.id)" onclick="return false;"><span class="glyphicon glyphicon-trash"></span></a>
+                    <a href="#" class="flag"><span class="glyphicon glyphicon-flag"></span></a>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <form name="FormEntry" ng-submit="submitForm(FormEntry.$valid)" novalidate class="FormEntry">
+        <table class="table table-striped" width="100%">
+            <tr>
+                <td width="80%">
+                    <input type="text" class="form-control" placeholder="Enter todo text..." ng-model="newTitle"
+                           required>
+                </td>
+                <td>
+                    <input type="date" class="form-control" ng-model="newDueDate" required></td>
+                <td align="right">
+                    <button class="btn btn-default" type="submit" ng-disabled="FormEntry.$invalid">Insert!
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

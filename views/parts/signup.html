@@ -1,0 +1,57 @@
+<div class="jumbotron text-center">
+    <h1>Sign Up</h1>
+
+    <form name="FormEntry" ng-submit="submitForm(FormEntry.$valid)" novalidate class="FormEntry">
+        <table class="table">
+            <tr>
+                <td>First Name:
+                </td>
+                <td>
+                    <input type="text" class="form-control" placeholder="Enter first name..." ng-model="firstName" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>Last Name:
+                </td>
+                <td>
+                    <input type="text" class="form-control" placeholder="Enter last name..." ng-model="lastName" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>Email Address:
+                </td>
+                <td>
+                    <input type="text" class="form-control" placeholder="Enter email address.." ng-model="emailAddress" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>User Name:
+                </td>
+                <td>
+                    <input type="text" class="form-control" placeholder="Enter user name..." ng-model="userName" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>Password:
+                </td>
+                <td>
+                    <input type="password" class="form-control" placeholder="Enter password..." ng-model="password1" required/>
+                </td>
+            </tr>
+            <tr>
+                <td>Password:
+                </td>
+                <td>
+                    <input type="password" class="form-control" placeholder="Enter password again..." ng-model="password2" required/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button class="btn btn-default" type="submit" ng-disabled="FormEntry.$invalid">
+                        Sign Up
+                    </button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>

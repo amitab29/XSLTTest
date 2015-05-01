@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html ng-app="MPA_App">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>My Personal Assistant</title>
+
+    <!-- Bootstrap -->
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="stylesheets/style.css" rel="stylesheet">
+
+    <!--Calendar Styles-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.3.1/fullcalendar.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">My Personal Assistant</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#signin">Sign In</a></li>
+                <li><a href="#signup">Sign Up</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+            <form class="navbar-form navbar-right">
+                <input type="text" class="form-control" placeholder="Search...">
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
+                <li><a href="#todo">To Do List</a></li>
+                <li><a href="#calendar">Calendar</a></li>
+                <li><a href="#">Another Item</a></li>
+                <li><a href="#">Another Item</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-view>
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="javascripts/bootstrap.min.js"></script>
+
+<!-- Angular Inclusions-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+
+<!-- Page Controller Inclusion-->
+<script src="javascripts/controllers/index_controller.js"></script>
+<script src="javascripts/controllers/todo_list_controller.js"></script>
+<<<<<<< HEAD
+<script src="javascripts/controllers/signup_controller.js"></script>
+=======
+<script src="javascripts/controllers/calendar_controller.js"></script>
+
+<!-- Calendar Items
+Modified Calendar.js
+    eventsWatcher.onAdded to add true parameter to fullcalendar call
+    This is to resolve an issue with the ui calendar losing entries when changing months
+    reference:   https://github.com/angular-ui/ui-calendar/issues/99
+-->
+<script src="javascripts/ui-bootstrap-0.12.1.min.js"></script>
+<script src="javascripts/ui-bootstrap-custom-tpls-0.12.1.min.js">/</script>
+<script src="javascripts/moment.js"></script>
+<script src="javascripts/fullcalendar.min.js"></script>
+<script src="javascripts/calendar.js"></script>
+
+>>>>>>> a66acaf7226088b1153cd2817ca2ebd6653ae357
+
+</body>
+</html>

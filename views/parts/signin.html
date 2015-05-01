@@ -1,0 +1,27 @@
+<div class="jumbotron text-center">
+    <h1>Sign In</h1>
+
+    <form name="FormEntry" ng-submit="submitForm(FormEntry.$valid)" novalidate class="FormEntry">
+        <div id="mainarea">
+            <div id="username">
+                <div id="usernameinput">
+                    <input type="text" class="form-control" placeholder="Enter user name..." ng-model="userName" required />
+                </div>
+            </div>
+            <div id="password">
+                <div id="passwordinput">
+                    <input type="password" class="form-control" placeholder="Enter password..." ng-model="password" required />
+                </div>
+            </div>
+            <div id="submit">
+                <button class="btn btn-default" type="submit" ng-disabled="FormEntry.$invalid">
+                    Sign In
+                </button>
+            </div>
+            <div ng-model="usersName2"></div>
+            <div>
+                <input type="text" placeholder="Coming soon..." ng-model="usersName" readonly />
+            </div>
+        </div>
+    </form>
+</div>
